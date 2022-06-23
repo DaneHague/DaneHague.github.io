@@ -18,8 +18,7 @@ const NewsContainer = () => {
       }]
 
       fetch('https://hacker-news.firebaseio.com/v0/item/31631173.json?print=pretty')
-      .then(r => r.json())
-      .then (data => console.log(data));
+      .then(r => r.json());
 
     return (
         <div>

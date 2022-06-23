@@ -2,7 +2,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 const MultiGrid = () => {
     return (
-        <div>
+        <div style={{marginLeft:20, marginRight:20}}>
             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                 <Grid item xs={6}>
                     <Paper>1</Paper>

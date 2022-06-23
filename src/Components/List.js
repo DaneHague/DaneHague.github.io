@@ -1,6 +1,5 @@
 import Item from '../Components/Item';
 const List = ({initialStories}) => {
-    console.log(initialStories);
     return (
         <ul>
             {initialStories.map((item) => (
