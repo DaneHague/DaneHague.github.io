@@ -21,14 +21,19 @@ export default function ButtonAppBar() {
                 aria-label="menu"
                 sx={{ mr: 2 }}
             >
-                <MenuIcon />
+                Hsk Practice
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                News
+                
             </Typography>
-            <Button color="inherit"><Link style={{marginRight:10}} to="/">Home</Link></Button>
-            <Button color="inherit"><Link style={{marginRight:10}} to="/about">About</Link></Button>
-            <Button color="inherit"><Link style={{marginRight:10}} to="/about">About</Link></Button>
+            <Link style={{marginRight:10}} to="/">Home</Link>
+            <Link style={{marginRight:10}} to="/about">About</Link>
+            <Link style={{marginRight:10}} to="/multiHsk1">Hsk 1</Link>
+            <Link style={{marginRight:10}} to="/multiHsk2">Hsk 2</Link>
+            <Link style={{marginRight:10}} to="/multiHsk3">Hsk 3</Link>
+            <Link style={{marginRight:10}} to="/multiHsk4">Hsk 4</Link>
+            <Link style={{marginRight:10}} to="/multiHsk5">Hsk 5</Link>
+            <Link style={{marginRight:10}} to="/multiHsk6">Hsk 6</Link>
             </Toolbar>
         </AppBar>
     </Box>
