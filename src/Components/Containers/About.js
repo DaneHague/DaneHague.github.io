@@ -5,7 +5,7 @@ import React from 'react';
 const About = () => {
     return(
         <div>
-            <Grid3 Image1={Img1} />
+            <Grid3 />
         </div>
     );
 };
