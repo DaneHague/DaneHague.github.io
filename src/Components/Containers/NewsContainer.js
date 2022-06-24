@@ -1,4 +1,5 @@
 import List from '../../Components/List.js';
+import React from 'react';
 const NewsContainer = () => {
     const initialStories = [{
         title: 'React',

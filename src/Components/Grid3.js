@@ -1,5 +1,6 @@
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import React from 'react';
 const Grid3 = ({Image1}) => {
 return (
     <div>
