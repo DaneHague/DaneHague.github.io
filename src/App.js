@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import HomeContainer from './Components/Containers/HomeContainer';
-import AppBar from './Components/Containers/ButtonAppBar';
 import ButtonAppBar from './Components/Containers/ButtonAppBar';
 import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter} from "react-router-dom";
 import About from './Components/Containers/About';
-import HskGame from './Components/Containers/HskMultiGame'
+import HskGame from './Components/Containers/HskMultiGame';
+import Dictionary from './Components/Containers/Dictionary';
 import React from 'react';
 function App() {
   

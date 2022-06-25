@@ -1,5 +1,3 @@
-
-import Img1 from '../../Images/cn1.jpg'
 import Grid3 from '../Grid3';
 import React from 'react';
 const About = () => {

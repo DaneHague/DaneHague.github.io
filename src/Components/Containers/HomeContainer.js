@@ -1,23 +1,14 @@
-import List from '../List.js';
 import React from 'react';
 import MultiGrid from './MultiGrid.js';
-import Paper from '@mui/material/Paper';
+import HomeTile from '../HomeTile.js';
 const HomeContainer = () => {
     return (
         <div>
-            <h1>Hello Hsk</h1>
-            <MultiGrid Paper1={<Paper style={{background: '#212121', height: 200, color: 'white'}}>
-              Word Game
-            </Paper>}
-            Paper2={<Paper style={{background: '#212121', height: 200, color: 'white'}}>
-              Paper2
-            </Paper>}
-            Paper3={<Paper style={{background: '#212121', height: 200, color: 'white'}}>
-              Paper3
-            </Paper>}
-            Paper4={<Paper style={{background: '#212121', height: 200, color: 'white'}}>
-              Paper4
-            </Paper>}
+            <h1>Hsk Practice</h1>
+            <MultiGrid Tile1={<HomeTile TextValue='Word Game'></HomeTile>}
+            Paper2={<HomeTile TextValue='Tile2'></HomeTile>}
+            Paper3={<HomeTile TextValue='Tile3'></HomeTile>}
+            Paper4={<HomeTile TextValue='Tile4'></HomeTile>}
             Style1="backgroundColor: 'red'" />
         </div>
     )
