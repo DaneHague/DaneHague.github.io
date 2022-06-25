@@ -1,20 +1,20 @@
 import Grid from '@mui/material/Grid';
 import React from 'react';
-const MultiGrid = ({Tile1, Paper2, Paper3, Paper4}) => {
+const MultiGrid = ({Tile1, Tile2, Tile3, Tile4}) => {
     return (
-        <div style={{marginLeft:20, marginRight:20}}>
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <div style={{marginLeft:20, marginRight:20, marginTop: 50}}>
+            <Grid container rowSpacing={6} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                 <Grid item xs={6}>
                     {Tile1}
                 </Grid>
                 <Grid item xs={6}>
-                    {Paper2}
+                    {Tile2}
                 </Grid>
                 <Grid item xs={6}>
-                    {Paper3}
+                    {Tile3}
                 </Grid>
                 <Grid item xs={6}>
-                    {Paper4}
+                    {Tile4}
                 </Grid>
             </Grid>
         </div>

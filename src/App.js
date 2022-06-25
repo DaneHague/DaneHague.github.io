@@ -5,9 +5,9 @@ import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter} from "reac
 import About from './Components/Containers/About';
 import HskGame from './Components/Containers/HskMultiGame';
 import Dictionary from './Components/Containers/Dictionary';
-import React from 'react';
+import React, { useState } from 'react';
+
 function App() {
-  
   return (
     <div className="App">
       <ButtonAppBar />
@@ -20,6 +20,7 @@ function App() {
           <Route path="/multiHsk4" element={<HskGame />} />
           <Route path="/multiHsk5" element={<HskGame />} />
           <Route path="/multiHsk6" element={<HskGame />} />
+          <Route path="/dictionary" element={<Dictionary />} />
         </Routes>
     </div>
   );
