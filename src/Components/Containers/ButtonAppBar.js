@@ -13,7 +13,7 @@ export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
-            <Toolbar>
+            <Toolbar style={{backgroundColor: '#EF5350'}}>
             <IconButton
                 size="large"
                 edge="start"
@@ -23,17 +23,9 @@ export default function ButtonAppBar() {
             >
                 Hsk Practice
             </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                
-            </Typography>
-            <Link style={{marginRight:10}} to="/">Home</Link>
-            <Link style={{marginRight:10}} to="/about">About</Link>
-            <Link style={{marginRight:10}} to="/multiHsk1">Hsk 1</Link>
-            <Link style={{marginRight:10}} to="/multiHsk2">Hsk 2</Link>
-            <Link style={{marginRight:10}} to="/multiHsk3">Hsk 3</Link>
-            <Link style={{marginRight:10}} to="/multiHsk4">Hsk 4</Link>
-            <Link style={{marginRight:10}} to="/multiHsk5">Hsk 5</Link>
-            <Link style={{marginRight:10}} to="/multiHsk6">Hsk 6</Link>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} />
+            <Link style={{marginRight:10, color:'white'}} to="/">Home</Link>
+            <Link style={{marginRight:10, color:'white'}} to="/about">About</Link>
             </Toolbar>
         </AppBar>
     </Box>
