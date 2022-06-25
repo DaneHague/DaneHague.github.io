@@ -20,7 +20,12 @@ function App() {
           <Route path="/multiHsk4" element={<HskGame />} />
           <Route path="/multiHsk5" element={<HskGame />} />
           <Route path="/multiHsk6" element={<HskGame />} />
-          <Route path="/dictionary" element={<Dictionary />} />
+          <Route path="/dictionary1" element={<Dictionary />} />
+          <Route path="/dictionary2" element={<Dictionary />} />
+          <Route path="/dictionary3" element={<Dictionary />} />
+          <Route path="/dictionary4" element={<Dictionary />} />
+          <Route path="/dictionary5" element={<Dictionary />} />
+          <Route path="/dictionary6" element={<Dictionary />} />
         </Routes>
     </div>
   );

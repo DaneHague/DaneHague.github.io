@@ -24,7 +24,7 @@ const HomeContainer = () => {
             <h1>Hsk Practice</h1>
             <MultiGrid 
               Tile1={<HomeTile TextValue='Word Game'></HomeTile>}
-              Tile2={<HomeTile TextValue='Tile2'></HomeTile>}
+              Tile2={<HomeTile Game="dictionary" TextValue='Dictionary'></HomeTile>}
               Tile3={<HomeTile TextValue='Tile3'></HomeTile>}
               Tile4={<HomeTile TextValue='Tile4'></HomeTile>}
             Style1="backgroundColor: 'red'" />

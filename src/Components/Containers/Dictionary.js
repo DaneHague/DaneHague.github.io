@@ -8,9 +8,32 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
 const Dictionary = () => {
+    const [currentHskData, setCurrentHskData] = React.useState([]);
 
-    let hskData = localStorage.getItem("HskData");
+    var hskDictionaryLevel = window.location.href.substring(window.location.href.length - 1, window.location.href.length);
+    useEffect(() => {
+
+        function setData(data) {
+          const storageCheck = localStorage.getItem("HskData" + hskDictionaryLevel);
+          setCurrentHskData(data);
+          if(!storageCheck) {
+            localStorage.setItem("HskData" + hskDictionaryLevel, JSON.stringify(data));
+          }
+          
+        }
+        async function fetchData() {
+            fetch("https://hskapi20220623180039.azurewebsites.net/api/hskdetails/HskByLevel/" + hskDictionaryLevel)
+            .then(r => r.json())
+            .then(data => setData(data))
+        }
+        fetchData();
+        
+        
+    }, [])
+    let hskData = [];
+    hskData = localStorage.getItem("HskData" + hskDictionaryLevel);
     hskData = JSON.parse(hskData);
+    
     return (
         <div>
             <h1>Dictionary</h1>
@@ -23,7 +46,7 @@ const Dictionary = () => {
                     <th>Translation 3</th>
                     <th>Hsk Level</th>
                 </tr>
-                {hskData.map((data) => (
+                {currentHskData.map((data) => (
                     <tr>
                         <td>{data.hanzi}</td>
                         <td>{data.pinyin}</td>

@@ -14,22 +14,22 @@ const HomeTile = ({TextValue, Game}) => {
               <Box style={{marginRight:15}} sx={{ flexGrow: 1 }}>
                 <Grid container spacing={2}>
                     <Grid item xs={4}>
-                        <Link style={{color: 'white'}} to="/multiHsk1">Hsk 1</Link>
+                        <Link style={{color: 'white'}} to={Game+"1"}>Hsk 1</Link>
                     </Grid>
                     <Grid item xs={4}>
-                        <Link style={{color: 'white'}} to="/multiHsk2">Hsk 2</Link>
+                        <Link style={{color: 'white'}} to={Game+"2"}>Hsk 2</Link>
                     </Grid>
                     <Grid item xs={4}>
-                        <Link style={{color: 'white'}} to="/multiHsk3">Hsk 3</Link>
+                        <Link style={{color: 'white'}} to={Game+"3"}>Hsk 3</Link>
                     </Grid>
                     <Grid item xs={4}>
-                        <Link style={{color: 'white'}} to="/multiHsk4">Hsk 4</Link>
+                        <Link style={{color: 'white'}} to={Game+"4"}>Hsk 4</Link>
                     </Grid>
                     <Grid item xs={4}>
-                        <Link style={{color: 'white'}} to="/multiHsk5">Hsk 5</Link>
+                        <Link style={{color: 'white'}} to={Game+"5"}>Hsk 5</Link>
                     </Grid>
                     <Grid item xs={4}>
-                        <Link style={{color: 'white'}} to="/multiHsk6">Hsk 6</Link>
+                        <Link style={{color: 'white'}} to={Game+"6"}>Hsk 6</Link>
                     </Grid>
                 </Grid>
             </Box>
